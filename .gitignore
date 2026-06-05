@@ -1,0 +1,8 @@
+# plaintext source — never publish this (defeats the encryption)
+source.html
+# staticrypt working dir and salt config
+encrypted/
+.staticrypt.json
+# misc
+.DS_Store
+node_modules/
