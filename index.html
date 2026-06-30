@@ -172,6 +172,14 @@
                 }
             }
         </style>
+    
+        <!-- cache-bust-redirect -->
+        <script>
+        (function(){
+          var p=new URLSearchParams(location.search),v=+p.get('v')||0,now=Date.now();
+          if(now-v>3000){p.set('v',now);location.replace(location.pathname+'?'+p.toString()+location.hash);}
+        })();
+        </script>
     </head>
 
     <body class="staticrypt-body">
